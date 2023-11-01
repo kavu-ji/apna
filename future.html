@@ -1,0 +1,149 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Count on Me | Future Scope</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="mainframe">
+    <div class="w-80">
+      <div
+        class="card"
+        style="
+          background: linear-gradient(
+            to right,
+            #6528f7,
+            #a076f9,
+            #d7bbf5,
+            #6528f7
+          );
+        "
+      >
+        <img
+          src="18.jpeg"
+          class="profile-img"
+          alt="Avatar"
+          style="width: 100%; object-fit: contain"
+        />
+        <div
+          class="card-container"
+          style="background: #ede4ff; padding-bottom: 2.8rem"
+        >
+          <h1 style="color: #6528f7"><b>Mohit Kumar</b></h1>
+          <ul class="list">
+            <li class="item">
+              I will be a <s>good</s> bad child,
+              <s>great friend that you deserve</s>. I think I can never be that
+              good friend of yours. I always do something wrong.
+            </li>
+            <li class="item">
+              I will <s>never</s> be a pain in your ass. Prooving it again and
+              again.
+            </li>
+            <li class="item">
+              I will always try to keep you <s>happy</s> depressed and
+              <s>entertain you when needed</s>. Entertainment and happiness ke
+              alawa sab de diya tujhe.
+            </li>
+            <li class="item">
+              I will be ... <strong>MY <s>BEST</s> WORST VERSION</strong>. Ab
+              mai jo hun that I will never change. Esa hi rehna waala hun
+              hamesha but slight improvement ka chance hai bass😅
+            </li>
+            <li class="item">
+              Bahut kuch strike off hogaye hai from my previous promise😅😅
+            </li>
+            <li class="item">
+              Shayad thik hi kaha tha ki "We two are from different places and
+              we could never understand each other". Mai shayad koshis bhi karlu
+              phir bhi nahi samajh paunga kabhi. Mai apna karta aur tum apna
+              karti.
+            </li>
+            <li class="item">
+              Bass I want sab misunderstanding khatam ho humare beech aur aagey
+              kuch problem na ho. I want everything to be normal again though I
+              am not helping in it but will surely do medem.
+            </li>
+            <li class="item">
+              Ek gaana yaad ayaa "Tell me whyyy are we? so blind to see that the
+              ones we hurt are YOUUU and MEEE🥲".
+            </li>
+            <li class="item">
+              Bollna toh bahut kuch hai but boll nahi paa raha. May be Bengaluru
+              aayegi toh tab shayad ho paaye😊😅. Tere bhi bahut saare DRUNK
+              stories pending hai btw.
+            </li>
+            <li class="item">
+              Don't again think ki mai summarize kar raha hun sort of. Bass I
+              needed to tell some of this😅
+            </li>
+            <li class="item">
+              And mujhe toh kuch ek out of place feel toh ho rahi hai though tujhe
+              esa nahi lagta hai and u seem to be pretty normal about it but MUJHE
+              esa lagta hai bcoz...BAAD MAI😂😂
+            </li>
+            <li class="item">
+              And and and mera yeh drama, pagalpan, chutiyaap, hagna, tere liye
+              sab karna will never stop(not soon). So bear with me as always❤️😂
+            </li>
+            <li class="item">
+              But I trust me and you ki one day everything will be fine and nice and beautiful and the way we both liked. Bass tab tak ke liye chote mote nokk jhokk toh chalte rahenge...We will pass over this phase soon 😂😂
+            </li>
+            <li class="item">
+              And I miss my old pagal kavu and old us and my previous 12:53 and 6:31 updates 😭😭. I miss you so much bhaiiii 😭😭😭 but it seems tu mujhe forget kar chuki hai completely. Mujhe kuch acha nahi lag raha hai kavisha 🥺.
+            </li>
+            <li class="item">
+              Ab teri baari. GO ON KAVISHAAAAA❤️
+            </li>
+          </ul>
+
+          <div class="review_div">
+            <h4 class="item" style="font-weight: lighter">
+              Write something for me babu
+            </h4>
+            <textarea
+              id="review_text"
+              placeholder="Write me a review Kavisha😁"
+            ></textarea>
+            <button id="send_review_btn">SEND REVIEW</button>
+          </div>
+
+          <h4 class="item" style="font-weight: lighter">
+            Want to shop with me Kavisha?
+          </h4>
+          <a href="shop.html" class="shop-now-btn"> SHOP KAVU SHOP </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const sendReviewBtn = document.getElementById('send_review_btn');
+      const textEl = document.getElementById('review_text');
+
+      function sendWhatsappMsg() {
+        const message = textEl.value;
+
+        const encodedMsg = encodeURI(message);
+        const link = 'https://wa.me/919861013399?text=' + encodedMsg;
+
+        if (!encodedMsg) {
+          alert('First write about something Kavisha');
+          return;
+        }
+        // alert(encodedMsg);
+        window.location.href = link;
+      }
+
+      sendReviewBtn.addEventListener('click', function () {
+        sendWhatsappMsg();
+      });
+    </script>
+  </body>
+</html>
