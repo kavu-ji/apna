@@ -17,19 +17,44 @@
         background-color: #352f44;
         border-radius: 4px;
       }
-      p {
+      #message-container {
         padding: 0.7rem;
-        color: #faf0e6;
-        font-size: 0.9rem;
         font-family: monospace;
         word-spacing: normal;
         letter-spacing: normal;
       }
+      #message-head {
+        background-color: #faf0e630;
+        padding: 0.2rem 1rem;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+      }
+      small {
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: aliceblue;
+      }
+      p {
+        color: #faf0e6;
+        font-size: 0.9rem;
+      }
     </style>
   </head>
   <body class="mainframe">
+    <h2 style="color: #fff; text-align: center">My Dustbin</h2>
+
     <div class="m-container" id="message-box">
-      <p>You are the best gril</p>
+      <div id="message-container">
+        <div id="message-head">
+          <small>Kachra #1</small>
+          <small>01-11-23</small>
+        </div>
+        <div id="message-body">
+          <p>You are the best gril</p>
+        </div>
+      </div>
     </div>
 
     <div class="links">
@@ -37,7 +62,7 @@
         href="https://wa.me/919861013399?text=Done"
         class="link"
         style="text-align: center"
-        >Send me a thumbsup after giving it a read</a
+        >Send me a thumbsup with kachra number after giving it a read</a
       >
     </div>
   </body>
